@@ -1,0 +1,11 @@
+ Explain the core changes made in Hadoop 2.x
+
+Resource utilization in 2.x is done by resource manager and job monitoring is done by application manager 
+whereas in 1.x both the above jobs are done by job tracker.
+
+Scalability in 2.x is increased to 10,000 nodes and 1,00,000 task whereas in 1.x it was only 4000 nodes and 40,000 tasks.
+
+cluster utilization in 2.x is better as resources are dynamic and fine grained and in 1.x the task tracker was configured with 
+static slot moreover the map task dont run on reduce slots so the cluster utilization is poor.
+
+2.x supports models all processing models other than MapReduce.
